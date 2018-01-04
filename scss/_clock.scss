@@ -1,0 +1,28 @@
+#clock {
+  width: 300px;
+  height: 300px;
+  border: 5px solid $accent;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    background-color: $primary;
+    transform: rotate(#{$rotateVal}deg);
+    transform-origin: 0%;
+    transition: transform .07s;
+    transition-timing-function: cubic-bezier(0.83, 1.07, 0, 1.83);
+  }
+  .hour-hand {
+    width: 45%;
+  }
+  .min-hand {
+    width: 40%;
+  }
+  .sec-hand {
+    width: 35%;
+  }
+}

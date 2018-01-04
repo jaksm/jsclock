@@ -1,0 +1,54 @@
+// Variables
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$bg-darker: #1E6262;
+$bg-dark: #2D767F;
+$primary: #ECFFFB;
+$accent: #B4F1F1;
+
+$rotateVal: 90;
+
+// General stuff
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: $font;
+  font-size: 15px;
+  background-color: $bg-darker;
+  color: $primary;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: $accent;
+}
+
+#clock-wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5em;
+  @media screen and (max-width: 470px){
+    padding: 1em;
+  }
+}
+
+header, hgroup {
+  text-align: center;
+  padding: 1.75em 5em;
+  @media screen and (max-width: 470px){
+    padding: 1.75em 1em;
+  }
+}
+
+hgroup {
+  padding: 0;
+}
+
+// Imports
+@import 'scss/_clock.scss';
